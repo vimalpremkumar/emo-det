@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+</head>
+<body>
+<div class="p">
+    <p>
+        Class Room Attention monitoring system using face Recognition
+        Requirements:
+       <br> ● Recognizing the facial expressions of the students in the classroom, Such 
+        as happiness, surprise, hate, sadness, fear, disgust, and anger.
+       <br> ● Generate a report on student emotions to improve the quality of 
+        classroom learning.</p>
+</div>
+
+ <div class="video">
+
+    <image src="{{ url_for('video_feed') }} "></image>
+</div>
+<section class="report">
+<div class="report__text">
+    <p>
+        <h1>Click here to generate report</h1>
+    </p>
+</div>
+<button class="report__button" type="submit">click here</button>
+</section>
+    
+
+
+</body>
+    
+</html>
+
+
