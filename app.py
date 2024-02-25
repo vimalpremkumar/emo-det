@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 import os 
 
 
-face_classifier = cv2.CascadeClassifier("G:\\PROJECTS\\Hack-O-HITS\\000FINAL\\report checking\\haarcascade_frontalface_default.xml")
-classifier =load_model("G:\\PROJECTS\\Hack-O-HITS\\000FINAL\\report checking\\Emotion_Detection.h5")
+face_classifier = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+classifier =load_model("Emotion_Detection.h5")
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 
@@ -49,7 +49,7 @@ def gen_frames():
 
 
                     input_variable = label
-                    with open('C:\\Users\\VIMAL\\OneDrive\\hoh\\report.csv', 'a', newline = '') as csvfile:
+                    with open('report.csv', 'a', newline = '') as csvfile:
                         my_writer = csv.writer(csvfile, delimiter = ' ')
                         my_writer.writerow(input_variable)
                     #sleep(2)
